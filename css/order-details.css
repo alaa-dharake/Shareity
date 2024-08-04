@@ -1,0 +1,110 @@
+:root {
+    --color-default: #212529;
+    --color-primary: #f5700a;
+    --color-secondary: #053b21;
+    --color-third: #b0d3bf;
+    --color-fourth: #589d62;
+    --color-five: #ece3df;
+    --color-six: #f8a300;
+    --color-seven: #fe5c05;
+    --color-eight: #7b9f01;
+    --color-nine: #63a91f;
+    --color-ten: #c6dc93;
+    --color-eleven: #2d4a05;
+  
+    --border-radius: 95% 4% 97% 5% / 4% 94% 3% 95%;
+    --border-radius-hover: 4% 95% 6% 95% / 95% 4% 92% 5%;
+    --border: .2rem solid var(--color-secondary);
+    --border-hover: .2rem dashed var(--color-primary);
+ }
+.card-body {
+    display: flex;
+}
+.imge {
+    border-radius: 77px;
+}
+img.me-4.rounded-circle {
+    height: 70px;
+}
+img.rounded.me-3 {
+    height: 110px;
+    width: 115px;
+}
+.container-fluid {
+    position: relative;
+    top: 20px;
+}
+.col-lg-8 {
+    width: 500px;
+    position: relative;
+    left: 221px;
+    top: 43px;
+}
+hr {
+    width: 1000px;
+    height: -32px;
+    position: relative;
+    color: #f5700a;
+    margin: 1.5rem 0;
+    border: 0;
+    border-top: 3px solid;
+    opacity: 3.25;
+    top: -11px;
+
+}
+p {
+    font-size: 13px;
+    color: var(--color-secondary);
+}
+.border.p-3.mt-4.mt-lg-0.rounded {
+    width: 550px;
+    position: relative;
+    top: -24px;
+}
+.card {
+    width: 1058px;
+}
+th {
+    color: #f5700a;
+}
+ul.topbar-menu.d-flex.align-items-center {
+    position: relative;
+    left: 427px;
+}
+.card {
+    background: transparent;
+}
+td {
+    color: var(--color-secondary);
+}
+h4{
+    color: var(--color-secondary);
+}
+.float-start1 {
+    width: 155px;
+    height: 40px;
+    background-color: #f5700a;
+    color: white;
+    position: relative;
+    left: 800px;
+    border-radius: 10px;
+    top: 4px;
+
+}
+a.btns.button-previous {
+    color: white;
+    border: none;
+    position: relative;
+    top: 5px;
+    font-weight:500;
+}
+i.mdi.mdi-plus-circle-multiple-outline {
+    position: relative;
+    left: 8px;
+    font-size: 19px;
+    top: 2px;
+}
+td.action {
+    position: relative;
+    display: -webkit-inline-box;
+}

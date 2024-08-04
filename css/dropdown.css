@@ -1,0 +1,161 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+:root {
+  --color-default: #212529;
+  --color-primary: #f5700a;
+  --color-secondary: #053b21;
+}
+
+main {
+  margin: 50px auto;
+  position: relative;
+  left: 51px;
+}
+
+/* Ensure main#sorted stays below the navbar and scrolls with the content */
+main#sorted {
+  position: relative;
+  top: 39px; /* Adjust this value based on your navbar height */
+  height: 49px;
+  width: 100%;
+}
+
+.dropdown1 {
+  width: 204px;
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+  border: 1px solid var(--color-primary);
+  z-index: 1;
+}
+
+.dropdown1 input:checked + ul {
+  display: block;
+}
+
+.dropdown1 ul {
+  display: none;
+}
+
+.dropdown1.toggle > input {
+  display: none;
+}
+
+.dropdown1 > a,
+.dropdown1.toggle > label {
+  border-radius: 2px;
+  box-shadow: 0 6px 5px -5px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown1 > a::after,
+.dropdown1.toggle > label::after {
+  content: "";
+  float: right;
+  margin: 15px 15px 0 0;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid #CCC;
+}
+
+.dropdown1 ul {
+  list-style-type: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  box-shadow: 0 6px 5px -5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.dropdown1 a,
+.dropdown1.toggle > label {
+  display: block;
+  padding: 0 0 0 10px;
+  text-decoration: none;
+  line-height: 40px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #999;
+  background-color: #FFF;
+}
+
+.dropdown1 li {
+  height: 0;
+  overflow: hidden;
+  transition: all 500ms;
+}
+
+.dropdown1.hover li {
+  transition-delay: 300ms;
+}
+
+.dropdown1 li:first-child a {
+  border-radius: 2px 2px 0 0;
+  top: -6px;
+  position: relative;
+}
+
+.dropdown1 li:last-child a {
+  border-radius: 0 0 2px 2px;
+}
+
+.dropdown1 li:first-child a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #FFF;
+  margin: -10px 0 0 30px;
+}
+
+.dropdown1 a:hover,
+.dropdown1.toggle > label:hover,
+.dropdown1.toggle > input:checked ~ label {
+  background-color: #EEE;
+  color: #666;
+}
+
+.dropdown1 > a:hover::after,
+.dropdown1.toggle > label:hover::after,
+.dropdown1.toggle > input:checked ~ label::after {
+  border-top-color: #AAA;
+}
+
+.dropdown1 li:first-child a:hover::before {
+  border-bottom-color: #EEE;
+}
+
+.dropdown1.hover:hover li,
+.dropdown1.toggle > input:checked ~ ul li {
+  height: 40px;
+}
+
+.dropdown1.hover:hover li:first-child,
+.dropdown1.toggle > input:checked ~ ul li:first-child {
+  padding-top: 15px;
+}
+
+.dropdown1 > a::after,
+.dropdown1.toggle > label::after {
+  content: "";
+  float: right;
+  margin: 15px 15px 0 0;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid var(--color-default); /* Change arrow color to match your design */
+  transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+
+.dropdown1.open > a::after,
+.dropdown1.toggle > input:checked + label::after {
+  transform: rotate(180deg); /* Rotate arrow when dropdown is open */
+}

@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto|Sriracha&display=swap");
+
+:root {
+    --color-default: #212529;
+    --color-primary: #f5700a;
+    --color-secondary: #053b21;
+}
+
+:root {
+    --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-primary: "Amatic SC", sans-serif;
+    --font-secondary: "Inter", sans-serif;
+}
+
+
+.img1{
+    width: 30px;
+    position: relative;
+    top: 6px;
+  }
+
+.containerss {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    position: relative;
+}
+.content{
+    background-image: url(/Cook-profile/assets/images/Untitled\ design\ \(38\).jpg )
+}
+.container-fluid{
+    backdrop-filter: blur(5px)
+}
+ul.menu-items {
+    text-decoration: none;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0px, 1fr));
+    gap: 1px 350px;
+    position: relative;
+    left: -52px;
+}
+
+.menu-item1 {
+    border-radius: 20px 0 20px 20px;
+    margin: 30px 0;
+    padding-top: 15px;
+    padding-right: 30px;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border: 3px solid #003c03;
+}
+
+/* .menu-item:nth-child(2n) {
+    background: #FBE4F0;
+}
+
+.menu-item:nth-child(3n) {
+    background: #F7F7FE;
+}
+
+.menu-item:nth-child(4n) {
+    background: #E4FDF1;
+} */
+
+
+.menu-item-dets {
+    margin-left: 150px;
+    padding-bottom: 15px;
+}
+
+.menu-item-heading {
+    font-size: 17px;
+    margin: 10px 0px 12px;
+    color: rgb(5, 59, 33);
+}
+
+@keyframes rotatePlate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.avatar .myimg {
+    border-radius: 20px 0 0 20px;
+    animation: none;
+}
+
+.avatar  .myimg {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    margin: 0;
+}
+img.myimg {
+    position: relative;
+    left: 240px;
+    border: 1px solid #f5700a;
+    top:-11px;
+}
+.detail{
+    display: flex;
+    position: relative;
+    gap: 13px;
+    font-size: 24px;
+}
+.cook{
+    color: #e0dfdf;
+}
+
+.uk-muted1 {
+    font-size: 15px;
+    position: relative;
+    color: var(--color-primary);
+}
+h3 {
+    font-size: 12px;
+}
+.float-start1 {
+    width: 125px;
+    max-width: 125px !important;
+    height: 40px;
+    background-color: #f5700a;
+    color: white;
+    position: relative;
+    left: 900px;
+    border-radius: 10px;
+    top: 4px;
+    
+
+   
+
+}
+a.btns.button-previous {
+    color: white;
+    border: none;
+    position: relative;
+    top: 5px;
+    font-weight: 500;
+}
+
+i.mdi.mdi-plus-circle-multiple-outline {
+    position: relative;
+    left: 8px;
+    font-size: 19px;
+    top: 2px;
+}
+ul.list-inline.m-0 {
+    top: -228px;
+    display: inline-grid;
+    position: relative;
+    left: 160px;
+}
+button.btn.btn-sm.rounded-0 {
+    background-color: #f5700a;
+    color: white;
+}
+img.menu-image {
+    width: 170px;
+    position: absolute;
+    top: 5px;
+    left: -38px;
+    animation: rotatePlate 50s infinite linear;
+}
+
+ul.topbar-menu.d-flex.align-items-center {
+    position: relative;
+    left: 427px;
+}
+.ourlogo {
+    position: relative;
+    top: -28px;
+    left: 10px;
+}
+
+i.mdi.mdi-pencil-box-outline {
+    color: var(--color-secondary);
+}

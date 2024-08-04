@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+* {
+	margin: 0;
+	padding: 0;
+
+}
+.chefhat {
+	width: 79px;
+    height: 45px;
+    top: 9px;
+    left: 35px;
+    padding: -20px;
+    position: relative;
+    margin: -24px;
+}
+
+i {
+	margin-right: 10px;
+}
+#logo-main {
+    position: relative;
+    width: 88px;
+    top: -7px;
+    height: 87px;
+    padding: 12px;
+}
+h1 {
+    position: relative;
+    left: 82px;
+    top: 25px;
+    font-size: 20px;
+    color: #405f46 ;
+    font-family: 'Roboto', sans-serif;
+
+}
+/*----------bootstrap-navbar-css------------*/
+.navbar-mainbg {
+    position: fixed; /* Add this line to make the navbar fixed */
+    top: 0; /* Add this line to position the navbar at the top of the viewport */
+    width: 100%; /* Add this line to make the navbar span the full width of the viewport */
+    z-index: 1000; /* Add this line to ensure the navbar appears above other elements */
+    background-color: rgb(190, 192, 174);
+    padding: 0px;
+    height: 74px;
+    /* border: 1px solid #405f46; */
+
+}
+.scrolled {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 1px 10px #999;
+    z-index: 1000;
+}
+
+/* img {
+    width: 28px;
+    position: relative;
+    font-size: 10px;
+    top: -20px;
+} */
+
+#navbarSupportedContent{
+	overflow: hidden;
+	position: relative;
+    top: -93px;
+    height: 74px;
+
+
+}
+#navbarSupportedContent ul{
+	padding: 0px;
+    position: relative;
+    margin: 0px;
+    left: 453px;
+    top: 13px;
+
+}
+#navbarSupportedContent ul li a i{
+	margin-right: 10px;
+}
+#navbarSupportedContent li {
+	list-style-type: none;
+	float: left;
+}
+#navbarSupportedContent ul li a{
+	color:  #89947f;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    padding: 20px 20px;
+    transition-duration:0.6s;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    position: relative;
+}
+#navbarSupportedContent>ul>li.active>a{
+	color: #405f46;
+	background-color: transparent;
+	transition: all 0.7s;
+}
+#navbarSupportedContent a:not(:only-child):after {
+	position: absolute;
+	right: 20px;
+	top: 10px;
+	font-size: 14px;
+	font-family: "Font Awesome 5 Free";
+	display: inline-block;
+	padding-right: 3px;
+	vertical-align: middle;
+	font-weight: 900;
+	transition: 0.5s;
+}
+#navbarSupportedContent .active>a:not(:only-child):after {
+	transform: rotate(90deg);
+}
+.hori-selector{
+	display:inline-block;
+	position:absolute;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	transition-duration:0.6s;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	background-color:  #ced6c7;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	margin-top: 10px;
+}
+/* .hori-selector{
+	top: 26px;
+    left: 324.656px;
+    height: 79px;
+    width: 84.1562px;
+} */
+
+.hori-selector .right,
+.hori-selector .left{
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background-color: #ced6c7;
+	bottom: 10px;
+}
+.hori-selector .right{
+	right: -25px;
+}
+.hori-selector .left{
+	left: -25px;
+}
+.hori-selector .right:before,
+.hori-selector .left:before{
+	content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(190, 192, 174);
+}
+.hori-selector .right:before{
+	bottom: 0;
+    right: -25px;
+}
+.hori-selector .left:before{
+	bottom: 0;
+    left: -25px;
+}
+:root {
+	--motion-ease: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+	--motion-duration: 0.3s;
+}
+  button {
+  	appearance: none;
+  	background: #b5292900;
+  	border: 0;
+  	left: 562px;
+  	color: #fff;
+  	top: 31px;
+  	height: 30px;
+  	cursor: pointer;
+  	font: inherit;
+  	/* font-size: 15px; */
+  	font-weight: 500;
+  	line-height: 1;
+  	padding: 1em 1.5em;
+  	position: relative;
+  	transition: filter var(--motion-duration);
+  }
+
+  button:hover {
+  	filter: brightness(1.1);
+  }
+
+  button:active {
+  	filter: brightness(0.9);
+  }
+
+  button>span {
+  	display: block;
+  	position: relative;
+  	transition: transform var(--motion-duration) var(--motion-ease);
+  	z-index: 1;
+  	font-size: 16px;
+  	top: -2px;
+  }
+
+  button:hover>span {
+  	transform: scale(1.05);
+  }
+
+  button:active>span {
+  	transform: scale(0.95);
+  }
+
+  button>svg {
+  	fill: #405f46;
+  	position: absolute;
+  	top: -5%;
+  	left: -5%;
+  	width: 110%;
+  	height: 110%;
+  }
+
+  button>svg>path {
+  	transition: var(--motion-duration) var(--motion-ease);
+  }
+
+  button:hover>svg>path {
+  	d: path("M0,0 C0,-5 100,-5 100,0 C105,0 105,100 100,100 C100,105 0,105 0,100 C-5,100 -5,0 0,0");
+  }
+
+  button:active>svg>path {
+  	d: path("M0,0 C30,10 70,10 100,0 C95,30 95,70 100,100 C70,90 30,90 0,100 C5,70 5,30 0,0");
+  }
+.vertical-line {
+	width: 2px;
+    height: 45px;
+    background-color: grey;
+    margin: 0 auto;
+    position: relative;
+    left: 268px;
+    top: 21px;
+}
+i.fa.badge.fa-lg {
+    position: relative;
+    top: 39px;
+    font-size: 24px;
+    color: white;
+    left: -25px;
+}
+.badge:after{
+	content:attr(value);
+	font-size:12px;
+	color: #fff;
+	background: #405f46;
+	border-radius:50%;
+	padding: 0 5px;
+	position:relative;
+	left:-8px;
+	top:-10px;
+	opacity:0.9;
+}
+
+@media(min-width: 992px){
+	.navbar-expand-custom {
+	    -ms-flex-flow: row nowrap;
+	    flex-flow: row nowrap;
+	    -ms-flex-pack: start;
+	    justify-content: flex-start;
+	}
+	.navbar-expand-custom .navbar-nav {
+	    -ms-flex-direction: row;
+	    flex-direction: row;
+	}
+	.navbar-expand-custom .navbar-toggler {
+	    display: none;
+	}
+	.navbar-expand-custom .navbar-collapse {
+	    display: -ms-flexbox!important;
+	    display: flex!important;
+	    -ms-flex-preferred-size: auto;
+	    flex-basis: auto;
+	}
+}
+
+
+@media (max-width: 991px){
+	#navbarSupportedContent ul li a{
+		padding: 12px 30px;
+	}
+	.hori-selector{
+		margin-top: 0px;
+		margin-left: 10px;
+		border-radius: 0;
+		border-top-left-radius: 25px;
+		border-bottom-left-radius: 25px;
+	}
+	.hori-selector .left,
+	.hori-selector .right{
+		right: 10px;
+	}
+	.hori-selector .left{
+		top: -25px;
+		left: auto;
+	}
+	.hori-selector .right{
+		bottom: -25px;
+	}
+	.hori-selector .left:before{
+		left: -25px;
+		top: -25px;
+	}
+	.hori-selector .right:before{
+		bottom: -25px;
+		left: -25px;
+	}
+}
